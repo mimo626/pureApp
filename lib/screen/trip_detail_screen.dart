@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter03_mingflix/widget/home_top_app_bar.dart';
+import 'package:flutter03_mingflix/widget/trip_detail_content.dart';
 
 class TripDetailScreen extends StatefulWidget {
   const TripDetailScreen({super.key});
@@ -16,26 +17,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
     return Scaffold(
         body: ListView(
           children: [
-            Stack(
-              children: [
-                Text('sss'),
-                Container(
-                  // 배경 이미지를 깔아준다.
-                  width: double.maxFinite,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('lib/assets/images/love4.PNG'),
-                          fit : BoxFit.cover
-                      )
-                  ),
-                ),
-                Positioned(
-                    child: AppBar(
-                      backgroundColor: Colors.transparent,
-                    )
-                )
-              ],
-            )
+            TripDetailContent()
           ],
         )
     );

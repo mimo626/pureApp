@@ -46,7 +46,7 @@ Widget makeItemList(BuildContext context){
     },
     child: Container(
       padding: EdgeInsets.only(right: 10),
-      child: Image.asset('lib/assets/images/love3.PNG')
+      child: Image.asset('lib/assets/images/trip1.PNG')
     ),
   );
 }
