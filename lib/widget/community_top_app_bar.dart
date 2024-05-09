@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter03_mingflix/screen/search_screen.dart';
 
 class CommunityTopAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CommunityTopAppBar({super.key});
@@ -29,7 +30,12 @@ class _CommunityTopAppBarState extends State<CommunityTopAppBar> {
       ),
       actions: [
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => SearchScreen(),)
+              );
+            },
             icon: Icon(Icons.search_outlined,
             color: Colors.blueGrey,)),
       ],
