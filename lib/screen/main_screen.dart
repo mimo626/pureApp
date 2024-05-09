@@ -3,6 +3,7 @@ import 'package:flutter03_mingflix/provider/navigation_index_provider.dart';
 import 'package:flutter03_mingflix/screen/community_screen.dart';
 import 'package:flutter03_mingflix/screen/home_screen.dart';
 import 'package:flutter03_mingflix/screen/memory_screen.dart';
+import 'package:flutter03_mingflix/screen/my_screen.dart';
 import 'package:provider/provider.dart';
 
 class MainScreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
       HomeScreen(),
       MemoryScreen(),
       CommunityScreen(),
-      Center(child: Text("My"))
+      MyScreen()
       ][currentIndex]
     );
   }
