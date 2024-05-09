@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter03_mingflix/provider/navigation_index_provider.dart';
+import 'package:flutter03_mingflix/screen/community_screen.dart';
 import 'package:flutter03_mingflix/screen/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -28,7 +29,7 @@ class _MainScreenState extends State<MainScreen> {
       child: [
       HomeScreen(),
       Center(child: Text("Memory")),
-      Center(child: Text("Community")),
+      CommunityScreen(),
       Center(child: Text("My"))
       ][currentIndex]
     );
