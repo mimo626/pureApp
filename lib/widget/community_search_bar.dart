@@ -16,6 +16,7 @@ class _CommunitySearchBarState extends State<CommunitySearchBar> {
       padding: MaterialStatePropertyAll(EdgeInsets.fromLTRB(10, 0, 10, 0)),
       elevation:MaterialStateProperty.all<double?>(0.0),
       backgroundColor: MaterialStateProperty.all(Color(0xffE8F0F9)),
+      autoFocus: true,
     );
   }
 }
