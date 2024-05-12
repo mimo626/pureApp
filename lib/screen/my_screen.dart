@@ -66,6 +66,24 @@ class _MyScreenState extends State<MyScreen> {
                 ],
               ),
             ),
+            // 디데이
+            Divider(),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    child: Text("D-day"),
+                    padding: EdgeInsets.all(7),
+                  ),
+                  Container(
+                    child: Text("385일"),
+                    padding: EdgeInsets.all(7),
+                  )
+                ],
+              ),
+            ),
+            // 연애 유형 결과
             Divider(),
             Container(
               padding: EdgeInsets.all(10),
