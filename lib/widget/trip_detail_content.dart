@@ -21,7 +21,7 @@ class _TripDetailContentState extends State<TripDetailContent> {
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage('lib/assets/images/trip1.PNG'),
-                  fit : BoxFit.cover
+                  fit : BoxFit.fill
               )
           ),
           child: Container(
@@ -36,9 +36,8 @@ class _TripDetailContentState extends State<TripDetailContent> {
                     children: [
                       // 여행지 이미지
                       Container(
-                        padding: EdgeInsets.fromLTRB(0, 45, 0, 10),
                         child: Image.asset('lib/assets/images/trip1.PNG'),
-                        height: 300,
+                        height: 690,
                       ),
                       // 설명
                       Container(
@@ -46,7 +45,7 @@ class _TripDetailContentState extends State<TripDetailContent> {
                         child: Text(
                             '강릉 앞 바다',
                             textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(fontSize: 18),
                         ),
                       ),
                       // 유명한 놀거리
@@ -55,7 +54,7 @@ class _TripDetailContentState extends State<TripDetailContent> {
                         child: Text(
                           '순두부 젤라또 / 초당 순두부 / 장칼국수 / 강릉 커피 / 대게 홍게',
                           textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 13)
+                          style: TextStyle(fontSize: 15)
                         ),
                       ),
                       // 저장 버튼
