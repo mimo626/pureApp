@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter03_mingflix/screen/hobby_detail_screen.dart';
 
 class HomeHobbySlider extends StatefulWidget {
   const HomeHobbySlider({super.key});
@@ -23,7 +24,7 @@ class _HomeHobbySliderState extends State<HomeHobbySlider> {
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, index) {
-                return makeItemList();
+                return makeItemList(context);
                 },
             ),
           )
@@ -33,9 +34,16 @@ class _HomeHobbySliderState extends State<HomeHobbySlider> {
   }
 }
 
-Widget makeItemList(){
+Widget makeItemList(BuildContext context){
   return InkWell(
-    onTap: () {},
+    onTap: () {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => HobbyDetailScreen(),
+          fullscreenDialog: true
+        )
+      );
+    },
     child: Container(
       padding: EdgeInsets.only(right: 10),
       child: CircleAvatar(
