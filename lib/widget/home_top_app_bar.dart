@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 // PreferredSizeWidget : 크기 조정이 가능한 위젯을 구현할때 사용하는 클래스
@@ -16,8 +17,11 @@ class HomeTopAppBar extends StatefulWidget implements PreferredSizeWidget{
 }
 
 class _HomeTopAppBarState extends State<HomeTopAppBar> {
+
   @override
   Widget build(BuildContext context) {
+    addTest();
+    printTest();
     return AppBar(
       title: Row(
         children: [
@@ -41,5 +45,23 @@ class _HomeTopAppBarState extends State<HomeTopAppBar> {
         ),
       ],
     );
+  }
+}
+// 테스트 데이터 저장
+Future<void> addTest() async {
+  await FirebaseFirestore.instance.collection('test').add({
+    'data1' : 100,
+    'data2' : 11.111,
+    'data3' : '안녕하세요'
+  });
+}
+
+// 테스트 데이터 출력
+Future<void> printTest() async {
+  var result = await FirebaseFirestore.instance.collection('test').get();
+
+  for(var doc in result.docs){
+    var map = doc.data();
+    print('firebase test : $map');
   }
 }

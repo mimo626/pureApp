@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "985163900623",
+    "project_id": "pure-313e7",
+    "storage_bucket": "pure-313e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985163900623:android:f20548d755253ff3a479ba",
+        "android_client_info": {
+          "package_name": "com.example.flutter03_mingflix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCWzU8ZxNOl-e_NRCpJZ61jnfcrNMImxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
